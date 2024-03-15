@@ -1,0 +1,266 @@
+<!-- commentario -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Titulo</title>
+    
+    <style>
+        h3 {
+            color:rebeccapurple;
+            /* color: rgb(255,0,0) */
+            /* color: #ff0000 */
+        }
+
+        .c1 {
+            color:#000088
+        }
+        
+        #id1 {
+            color: #999000;
+            font-size: 13px;
+        }
+
+        /* hiperlink ref: a */
+        a {
+            color:#000088;
+            text-decoration: none;
+        }
+
+        p {
+            text-indent: 35px;
+        }
+
+        #plast{
+            text-align: right;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            box-sizing: boorder-box;
+            background-color: aquamarine;
+
+            padding: 20px;
+            border: 10px solod red; 
+            margin: 30px 30px 30px 30px;
+                    /* 0px auto */
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./css/news.css">
+
+</head>
+<body>
+    <!-- src: image path (absolute local path/absolute network path)
+        relative path: 
+            ./
+            ../
+    width: amplada
+    heigh: alzada -->
+    <img src="p.png" alt="description" width="50%"> apartado1 > now
+
+    <!-- size: h1-h6 -->
+    <h1 style="color: brown;">News title</h1>
+
+    <h2>New2</h2>
+
+    <span class="c1"> Class1 </span> 
+
+    <span class="c1" id="id1"> Class2 </span>
+
+    <!-- line break -->
+    <hr>
+    <a href="http://google.com" target="_self"> 222222222222222 </a>
+    <a href="http://google.com" target="_blank"> 222222222222222 </a>
+
+    <hr>
+
+    <!-- <video src="" controls="controls" width="900px"></video> -->
+
+    <!-- <audio src="" controls="controls"></audio> -->
+    
+    <!-- CHANGE PARAGRAF -->
+    <br>
+
+    <p>
+        primer paragrafo ddddddddddddddddddddddddddddddddd
+        ddd
+    </p>
+
+    <p>
+        segundo <b>paragrafo</b> ddddddddddddddddddddddddddddddddd
+    </p>
+
+    <p id="plast">
+        ddddddddddddddddddddddddddddddddd
+    </p>
+
+    <div>
+        A AAAAAAAAAA AAAAAAAAAAA AAAAAa
+    </div>
+
+    <table border="1px" cellspacing="0" width="600px">
+        <!-- tr: table row -->
+        <tr>    
+            <!-- th: table header  -->
+            <th>cabecera1</th>
+            <th>cabe2</th>
+            <th>cabe3</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1111</td>
+            <td>1111</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1111</td>
+            <td>1111</td>
+        </tr>
+
+
+    </table>
+<br>
+    <!-- method: get & post -->
+    <form action="/submit-form" method="post">
+        <!-- Text -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+    
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+    
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+    
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1"><br><br>
+    
+        <!-- Date -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+    
+        <!-- Time -->
+        <label for="appt">Appointment:</label>
+        <input type="time" id="appt" name="appt"><br><br>
+    
+        <!-- File -->
+        <label for="file">Upload file:</label>
+        <input type="file" id="file" name="file"><br><br>
+    
+        <!-- Radio -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+    
+        <!-- Checkbox -->
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Sports">
+        <label for="hobby1"> Sports</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2" value="Reading">
+        <label for="hobby2"> Reading</label><br><br>
+    
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+    
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+        <!-- Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="./new.js">
+        
+    </script>
+    <!-- JSON -->
+
+
+    <!-- BOM-->
+        <!-- Window  -->
+            IOC / DI / AOP 
+        <!-- Navigator -->
+        <!-- Screen  -->
+        <!-- History -->
+        <!-- Location -->
+
+        <!-- // EVENTs
+        //1. using HTML label attributes -->
+        <input type="submit" onclick="on()" value="Submit">
+        <script>
+            function on() {
+                alert("click")
+            }
+        </script>
+        
+        <!-- //2. with DOM elements attributes  -->
+        <input type="button" id='btn' value='Button1'></input>
+        <script>
+            document.getElementById('btn').onclick = function() {
+                alert("click")
+            }
+        </script>
+
+        <!-- common EVENTs  -->
+        <!-- onlick()
+        onbur()
+        onfocus()
+        onload()
+        onsubmit() -> en form 
+        onkeydown()
+        onmouseover()
+        onmouseout() -->
+        <script>
+
+        function changeImg() {
+            // change image path 
+            // 1. get img object 
+            var img = document.getElementById('img').src = 'p.png';
+            // 2. set src value
+            img.src = 'q.png';
+        }
+
+        function changeText() {
+            //CHANGE TEXT
+            // 1. get element
+            var h1 = document.getElementById('h1');
+            // 2. set text
+            h1.value = 'New title';
+        }
+
+        function changeCheckBox() {
+            // SELECT ALL CHECKBOX
+            // 1. get all checkbox
+            var checkboxes = document.getElementsByName('hobby');
+
+            // 2. loop through all checkbox
+            for (var i = 0; i < checkboxes.length; i++) {
+                // 3. set checked value
+                checkboxes[i].checked = true;
+            }
+        }
+
+
+
+        </script>
+
+</body>
+</html>
